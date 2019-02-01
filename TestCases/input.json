@@ -1,0 +1,64 @@
+{
+  "XPATH_URL": "http://ace103.dev.broadcloudcc.com:9180/xpaths/",
+  "PASSWORD_POLICY_XPATH": "/consumer/customer[@id='382']/password-policy",
+  "PASSWORD_POLICY_URL": "http://ace103.dev.broadcloudcc.com:10888/aws/api/auxiliary-data/user-data/password-policy",
+
+
+  "headers": {
+    "Authorization": "7r5+2/9SXLeWf5CO1qgpCMApQcs=; tenantId=382",
+    "From": "api@ccone.broadcloudcc.com",
+    "Content-Type": "application/json",
+    "X-BSFT-Unique-Constraint": "name__s"
+  },
+
+
+  "password_policy_data":[
+    {
+        "type": "password-policy",
+        "attributes": {
+            "expiryPeriod__i": 0,
+            "name__s": "policy1_test009",
+            "oneUpperCaseLetter__i": 1,
+            "isDefault__i": 0,
+            "status__i": 1,
+            "maximumInvalidAttempts__i": 5,
+            "numberOfPasswordsRemembered__i": 8,
+            "oneDigit__i": 0,
+            "oneLowerCaseLetter__i": 0,
+            "length__i": 8,
+            "description__s": ""
+        }
+    }
+],
+  "password-policy-update":[
+    {
+        "id": "<id-to-be-updated>",
+        "type": "password-policy",
+        "attributes": {
+            "expiryPeriod__i": 1,
+            "name__s": "policy1",
+            "oneUpperCaseLetter__i": 0,
+            "isDefault__i": 0,
+            "status__i": 1,
+            "maximumInvalidAttempts__i": 1,
+            "numberOfPasswordsRemembered__i": 1,
+            "oneDigit__i": 1,
+            "oneLowerCaseLetter__i": 0,
+            "length__i": 2,
+            "description__s": ""
+        }
+    }
+],
+    "password-policy-delete":[
+    {
+        "id": "<id-to-be-deleted>",
+        "type": "password-policy",
+        "attributes": {
+            "status__i": 0
+        }
+    }
+]
+}
+
+
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.2 on win32)" generated="20190201 10:12:26.266" rpa="false">
+<suite id="s1" name="CJP Robot Testing" source="C:\Users\pserishm\Documents\PHC_Automation\CJP_Robot_Testing.robot">
+<test id="s1-t1" name="TESTCASE1: xpath_test009">
+<kw name="print1 class">
+<kw name="Xpath Test009" library="class">
+<msg timestamp="20190201 10:12:28.724" level="INFO">[91m[X][0m Base.create_entity HTTPConnectionPool(host='ace103.dev.broadcloudcc.com', port=10888): Max retries exceeded with url: /aws/api/auxiliary-data/user-data/password-policy (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00C38DB0&gt;: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+created_pp None
+[91m[X][0m Utils.condition_response data variable not provided
+id_ None
+[91m[X][0m Base.validate please pass a valid ID to verify against
+False</msg>
+<status status="PASS" starttime="20190201 10:12:26.681" endtime="20190201 10:12:28.726"></status>
+</kw>
+<status status="PASS" starttime="20190201 10:12:26.681" endtime="20190201 10:12:28.727"></status>
+</kw>
+<tags>
+<tag>Prov_Broker_Testing</tag>
+</tags>
+<status status="PASS" starttime="20190201 10:12:26.679" endtime="20190201 10:12:28.729" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190201 10:12:26.280" endtime="20190201 10:12:28.735"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Prov_Broker_Testing</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="CJP Robot Testing">CJP Robot Testing</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190201 10:12:26.661" level="WARN">Imported library 'C:\Users\pserishm\Documents\PHC_Automation\Library\Provisioning\password_policy.py' contains no keywords.</msg>
+<msg timestamp="20190201 10:12:26.670" level="WARN">Imported library 'C:\Users\pserishm\Documents\PHC_Automation\Library\Provisioning\utils.py' contains no keywords.</msg>
+</errors>
+</robot>
