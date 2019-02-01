@@ -1,13 +1,6 @@
-node {	
-stage('Checkout code') {
-        steps {
-            checkout scm
-        }
-    }
-	
-stage('Testcases) {
-		steps{
-			robot CJP_Robot_Testing.robot
-		}
-	}
+node {
+  git url: 'https://github.com/buildit/jenkins-pipeline-examples.git'
+  def mvnHome = tool 'M3'
+  sh "${mvnHome}/bin/mvn -B verify"
+}
 	
